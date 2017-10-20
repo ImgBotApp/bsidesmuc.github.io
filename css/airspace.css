@@ -375,7 +375,7 @@ font header .navbar-default .navbar-nav li a:hover {
   padding-bottom: 107px;
   position: relative;
   background-attachment: fixed;
-  background-position: center;
+  background-position-y: center;
 }
 #global-header:before {
   content: "";
