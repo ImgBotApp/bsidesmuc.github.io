@@ -370,12 +370,12 @@ font header .navbar-default .navbar-nav li a:hover {
 --*/
 #global-header {
   background: url("../img/slider-bg1.png") no-repeat;
-  background-size: cover;
+  background-size: contain;
   padding-top: 200px;
   padding-bottom: 107px;
   position: relative;
   background-attachment: fixed;
-  background-size: auto;
+  background-position: center;
 }
 #global-header:before {
   content: "";
