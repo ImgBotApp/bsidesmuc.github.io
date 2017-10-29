@@ -375,7 +375,32 @@ font header .navbar-default .navbar-nav li a:hover {
   padding-bottom: 107px;
   position: relative;
   background-attachment: fixed;
+  background-position-x: center;
   background-position-y: center;
+}
+/* when screen is less than 600px wide
+show mobile version and hide desktop */
+@media screen and (max-width: 519px) {
+  #global-header {
+    background-position-y: 30%;
+  }
+}
+@media screen and (max-width: 699px) and (min-width: 520px) {
+  #global-header {
+    background-position-y: 30%;
+  }
+}
+@media screen and (max-width: 1091px) and (min-width: 700px)  {
+  #global-header {
+    background-position-y: 15%;
+    background-size: 750px;
+  }
+}
+@media screen and (min-width: 1092px) {
+  #global-header {
+    background-position-y: 15%;
+    background-size: 750px;
+  }
 }
 #global-header:before {
   content: "";
