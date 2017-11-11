@@ -32,3 +32,11 @@
 .post-area a:hover {
   color: #0D0017;
 }
+
+.feature-box {
+  background: rgba(255, 255, 255, 0.5);
+  margin:  0 0 30px 0;
+  padding: 10px;
+  border-radius: 10px;
+  display: block;
+}

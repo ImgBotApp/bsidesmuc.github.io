@@ -260,9 +260,9 @@ font header .navbar-default .navbar-nav li a:hover {
   backface-visibility: hidden;
   padding: 100px 0;
 }
-#feature .col-md-6 {
+/*#feature .col-md-6 {
   background-color: rgba(255, 255, 255, 0.5);
-}
+}/**/
 #feature h2 {
   font-size: 28px;
   font-weight: 600;
