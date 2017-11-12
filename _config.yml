@@ -35,3 +35,11 @@ descriptions:
 
   - cat: dummy
     desc: "Just some placeholder posts, lorem ipsum and the rest."
+
+compress_html:
+  clippings: all
+  comments: all
+  ignore:
+    envs: []
+  blanklines: false
+  profile: false

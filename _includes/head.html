@@ -15,41 +15,26 @@
 <link rel="stylesheet" href="{{ site.baseurl | relative_url }}/css/animate.css" />
 <link rel="stylesheet" href="{{ site.baseurl | relative_url }}/css/responsive.css" />
 <link rel="stylesheet" href="{{ site.baseurl | relative_url }}/css/syntax.css" />
-<link rel="stylesheet" href="{{ site.baseurl | relative_url }}/css/ideal-image-slider.css" />
-
-<!-- Js -->
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
-<script src="{{ site.baseurl | relative_url }}/js/bootstrap.min.js"></script>
-<script src="{{ site.baseurl | relative_url }}/js/owl.carousel.min.js"></script>
-<script src="{{ site.baseurl | relative_url }}/js/plugins.js"></script>
-<script src="{{ site.baseurl | relative_url }}/js/min/waypoints.min.js"></script>
-<script src="{{ site.baseurl | relative_url }}/js/jquery.counterup.js"></script>
-<script src="{{ site.baseurl | relative_url }}/js/ideal-image-slider.min.js"></script>
-
-
-<script src="{{ site.baseurl | relative_url }}/js/main.js"></script>
 
 <!--
 cookie consent by Insites
 https://cookieconsent.insites.com/download/
 //-->
 <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
-<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
-<script>
-window.addEventListener("load", function(){
-window.cookieconsent.initialise({
-  "palette": {
-    "popup": {
-      "background": "#edeff5",
-      "text": "#838391"
-    },
-    "button": {
-      "background": "#4b81e8"
-    }
-  }
-})});
-</script>
+
+
+{% if page.ideal_image_slider %}
+  <link rel="stylesheet" href="{{ site.baseurl | relative_url }}/css/ideal-image-slider.min.css" media="screen" type="text/css">
+{% endif %}
+
+
+<!-- https://mattgemmell.com/page-specific-assets-with-jekyll/ //-->
+{% if page.custom_css %}
+  {% for stylesheet in page.custom_css %}
+  <link rel="stylesheet" href="{{ site.baseurl | relative_url }}/css/{{ stylesheet }}.css" media="screen" type="text/css">
+  {% endfor %}
+{% endif %}
+
 <!--
 /*
  * Airspace
