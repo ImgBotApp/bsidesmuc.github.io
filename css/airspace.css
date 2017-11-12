@@ -67,6 +67,12 @@ a:active {
   font-style: italic;
   color: #666;
 }
+
+.section-title p li {
+  font-family: 'Volkhov', serif;
+  font-style: italic;
+  color: #666;
+}
 /*--
 	Header Start
 --*/
